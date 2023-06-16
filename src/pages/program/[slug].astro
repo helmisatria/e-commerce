@@ -1,0 +1,47 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const { slug } = Astro.params;
+
+console.log("slug -->", slug);
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <h1>E-commerce</h1>
+    <p>Belajar bareng Helmi Satria</p>
+
+    <p>
+      Membuat sistem e-commerce seru-seruan. Integrasi ke database hingga
+      payment gateway 🥳
+    </p>
+  </main>
+
+  <section>
+    <h2>Details</h2>
+
+    <ul>
+      <li>Slicing design yang keren, dari figma ke code</li>
+      <li>Integrasi payment gateway sampe user bisa bayar</li>
+      <li>Penyimpanan data ke database</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Teknologi</h2>
+
+    <ul>
+      <li>Astro</li>
+      <li>Tailwindcss</li>
+      <li>SQLite</li>
+      <li>Payment gateway</li>
+      <li>Vercel/Cloudflare</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Udah ada 24 orang nih yg join</p>
+    <button>Ikutan 🙌</button>
+    <p>(Pura-pura doang kok ini, ga bayar apa-apa)</p>
+  </footer>
+</Layout>
