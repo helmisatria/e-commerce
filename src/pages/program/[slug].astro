@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import FormGabungProgram from "../../components/FormGabungProgram";
 
 const { slug } = Astro.params;
 
@@ -40,8 +41,6 @@ console.log("slug -->", slug);
   </section>
 
   <footer>
-    <p>Udah ada 24 orang nih yg join</p>
-    <button>Ikutan 🙌</button>
-    <p>(Pura-pura doang kok ini, ga bayar apa-apa)</p>
+    <FormGabungProgram client:load />
   </footer>
 </Layout>
