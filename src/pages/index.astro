@@ -3,26 +3,76 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="">
-    <h1>Helmi <br /> Satria</h1>
+  <main class="px-6 pt-24 text-zinc-50 relative overflow-hidden">
+    <img
+      src="/images/bg.png"
+      alt=""
+      class="absolute bg-repeat-y min-h-screen self-center max-w-sm z-0 top-0 left-0 min-w-[482px]"
+    />
 
-    <p>Belajar bareng helmi satria tentang dunia web 🌍</p>
+    <div class="z-10 relative">
+      <h1 class="text-[5.25rem] font-bold">
+        <span class="title">Helmi</span>
+        <span class="title -mt-9 block">Satria</span>
+      </h1>
 
-    <p>📚 Ayok kita belajar bareng!</p>
+      <p class="tracking-tighter text-2xl mt-12 text-zinc-300 max-w-[16.5rem]">
+        Belajar bareng helmi satria tentang dunia web 🌍
+      </p>
 
-    <ul>
-      <li>
-        <a href="/program/e-commerce" class="text-blue-800 underline">
-          <h2>Bikin E-Commerce</h2>
-          <p>Integrasi database sampe user bisa bayar 💰</p>
-        </a>
-      </li>
+      <p class="tracking-tighter mt-12 text-lg text-zinc-400">
+        📚 Ayok kita belajar bareng!
+      </p>
 
-      <li>
-        <div>
-          <p>Seru-seruan lainnya <br /> <span>Coming soon!</span></p>
-        </div>
-      </li>
-    </ul>
+      <ul>
+        <li class="mt-6">
+          <a
+            href="/program/e-commerce"
+            class="h-[190px] transition group hover:-translate-y-1 border border-zinc-500 hover:border-zinc-400 program-shadow rounded-lg p-5 flex flex-col justify-end"
+          >
+            <h2 class="text-2xl text-zinc-200 font-bold">Bikin E-Commerce</h2>
+            <p class="max-w-[142px] text-zinc-400 text-xs leading-tight">
+              Integrasi database sampe user bisa bayar 💰
+            </p>
+          </a>
+        </li>
+
+        <li class="mt-8">
+          <div
+            class="flex rounded-lg flex-col justify-center items-center text-center h-[148px]"
+            style="background: radial-gradient(147.97% 147.97% at 50% 6.08%, #18181B 0%, rgba(24, 24, 27, 0) 100%);"
+          >
+            <p class="text-2xl font-bold text-zinc-400">Seru-seruan lainnya</p>
+            <p class="block text-xs mt-2 text-zinc-500">Coming soon!</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="pb-10"></div>
+    </div>
   </main>
 </Layout>
+
+<style>
+  .title {
+    background: linear-gradient(
+        336.95deg,
+        rgba(22, 22, 24, 0.45) -7.01%,
+        rgba(22, 22, 24, 0) 73.27%
+      ),
+      #f8fafc;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    line-height: 95%;
+    letter-spacing: -0.04em;
+  }
+
+  .program-shadow {
+    box-shadow: 0px 47px 13px rgba(42, 48, 60, 0.01),
+      0px 30px 12px rgba(42, 48, 60, 0.07), 0px 17px 10px rgba(42, 48, 60, 0.25),
+      0px 8px 8px rgba(42, 48, 60, 0.43), 0px 2px 4px rgba(42, 48, 60, 0.49),
+      0px 0px 0px rgba(42, 48, 60, 0.5);
+  }
+</style>

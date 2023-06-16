@@ -15,7 +15,7 @@ export default function FormGabungProgram() {
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} class="text-zinc-50">
       <p>Udah ada 24 orang nih yg join</p>
       <button type="submit">Ikutan 🙌</button>
       <p>(Pura-pura doang kok ini, ga bayar apa-apa)</p>
